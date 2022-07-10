@@ -1,8 +1,5 @@
 package com.company;
 
-import com.company.Driver;
-import com.company.State;
-
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -13,10 +10,10 @@ public class Truck {
     private static final Path WRITE_PATH = Paths.get("./json.json");
     private int id;
     private String name;
-    private Driver driver;
+    private String driver;
     private State state;
 
-    public Truck(int id, String name, Driver driver, State state) {
+    public Truck(int id, String name, String driver, State state) {
         this.id = id;
         this.name = name;
         this.driver = driver;
@@ -39,11 +36,11 @@ public class Truck {
         this.name = name;
     }
 
-    public Driver getDriver() {
+    public String getDriver() {
         return driver;
     }
 
-    public void setDriver(Driver drive) {
+    public void setDriver(String drive) {
         this.driver = drive;
     }
     public State getState() {
