@@ -62,8 +62,6 @@ public class Truck {
             System.out.println(e.getMessage());
         }
     }
-
-
     @Override
     public String toString() {
         return "Track{" +
