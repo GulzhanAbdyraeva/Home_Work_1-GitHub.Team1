@@ -65,4 +65,42 @@ public class Main {
             System.out.println();
         }
     }
+//      public static void pattern(List<AutoPark> list1, List<DriverInfo> list2){
+//        String choice;
+//        int id;
+//        while(true){
+//            try {
+//                System.out.println(ANSI_PURPLE + "Choose one of the TRUCK: " + ANSI_RESET);
+//                id = scanner.nextInt();
+//                id--;
+//                System.out.println(ANSI_YELLOW + "----------------TRUCK-INF-----------------" + ANSI_RESET);
+//                System.out.println("N                :" + list1.get(id).getId());
+//                System.out.println("BUS              :" + list1.get(id).getName());
+//                System.out.println("Driver           :" + list1.get(id).getDriver());
+//                System.out.println("State            :" + list1.get(id).getState());
+//                System.out.println(ANSI_PURPLE + "Press 1 to change or assign new DRIVER" + ANSI_RESET);
+//                System.out.println(ANSI_PURPLE + "Press 2 to start DRIVING" + ANSI_RESET);
+//                System.out.println(ANSI_PURPLE + "Press 3 to start REPAIRING" + ANSI_RESET);
+//                System.out.println(ANSI_PURPLE + "Press 4 if you wish to stop program" + ANSI_RESET);
+//                scanner.nextLine();
+//                choice = scanner.nextLine();
+//                if(choice.equals("4")){
+//                    System.exit(0);
+//                }
+//                ServiceImpl actions = new ServiceImpl(list1, list2, id);
+//                switch (choice) {
+//                    case "1" -> actions.changeDriver(list1, list2, id);
+//                    case "2" -> actions.startDriving(list1, list2, id);
+//                    case "3" -> actions.startRepair(list1, list2, id);
+//                }
+//                list1 = actions.getList1();
+//                list2 = actions.getList2();
+//                displayDrivers(list2);
+//                displayTrucks(list1);
+//            }
+//            catch(IndexOutOfBoundsException e){
+//                System.out.println(ANSI_RED+"Вы обратились к несуществуещему грузовику!\n"+
+//                        "Общее количество грузовиков: "+list1.size());
+//            }
+//        }
 }
