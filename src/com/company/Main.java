@@ -23,6 +23,7 @@ public class Main {
          new Truck(2,"Volvo",driver,State.BASE),
          new  Truck(3,"DAF XT",driver,State.BASE),
         };
+
         String json = GSON.toJson(trucks);
         System.out.println(json);
         Truck.write(json);
@@ -33,16 +34,9 @@ public class Main {
         };
         String json2 = GSON.toJson(drivers);
         System.out.println(json2);
+        Driver.write(json2);
 
     }
 
-    public static void write(String obj){
-        Path write = Paths.get(String.valueOf(WRITE_PATH));
-        try{
-            Files.writeString(write,obj, StandardOpenOption.CREATE,StandardOpenOption.WRITE);
-        }catch(IOException e){
-            System.out.println(e.getMessage());
-        }
-    }
 
 }
