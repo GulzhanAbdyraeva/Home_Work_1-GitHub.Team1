@@ -7,7 +7,7 @@ import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
 
 public class Truck {
-    private static final Path WRITE_PATH = Paths.get("./json.json");
+    private static final Path WRITE_PATH = Paths.get("./trucks.json");
     private int id;
     private String name;
     private String driver;
@@ -37,7 +37,7 @@ public class Truck {
     }
 
     public String getDriver() {
-        return driver;
+        return  driver;
     }
 
     public void setDriver(String drive) {
@@ -68,5 +68,4 @@ public class Truck {
                 ", state=" + state +
                 '}';
     }
-//
 }

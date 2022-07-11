@@ -11,12 +11,15 @@ public class Driver {
     private int id;
     private String name;
 
+    private String  truckname;
+
     public Driver() {
     }
 
-    public Driver(int id, String name) {
+    public Driver(int id, String name, String truckname) {
         this.id = id;
         this.name = name;
+        this.truckname = truckname;
     }
 
     public int getId() {
@@ -42,11 +45,21 @@ public class Driver {
             System.out.println(e.getMessage());
         }
     }
+
+    public void setTruckname(String truckname) {
+        this.truckname = truckname;
+    }
+
+    public String getTruckname() {
+        return truckname;
+    }
+
     @Override
     public String toString() {
         return "Driver{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
+                ", truckname=" + truckname +
                 '}';
     }
 }
